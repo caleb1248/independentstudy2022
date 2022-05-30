@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+a {
+  margin: 10px;
+}
+
+p {
+  margin: 6vw;
+}
+
 :root {
   font-size: 25px;
 }
@@ -21,15 +29,25 @@ html, body {
 	justify-content: space-evenly;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+	margin-top: 2rem;
+  font-weight: 50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .top {
 	margin-top: 86px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: calc(100vh - 86px);
 }
 
-.mainbody a {
+a {
   text-decoration-line: none;
   padding: 20px;
   border: 2px solid white;
@@ -38,7 +56,7 @@ html, body {
   backdrop-filter: blur(5px);
 }
 
-.mainbody a:hover {
+a:hover {
   color: darkgray;
   background-color: white;
 }
@@ -60,4 +78,13 @@ iframe {
     width: 94vw;
     height: calc(94vw * 9/16);
   }
+}
+
+ol > li {
+  text-align: left;
+}
+
+.backnext {
+  display: flex;
+  justify-content: space-between;
 }
