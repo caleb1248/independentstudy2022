@@ -25,7 +25,6 @@ function App() {
         <Router><Routes>
           <Route path="*" element={<NotFound/>}></Route>
           <Route exact path="/" element={<Home/>}/>
-
           <Route path="/immune" element={<ImmuneHome/>}/>
           <Route path="/immune/1" element={<Youtube title="What is the immune system?" back="/immune" next="/immune/2" video="https://www.youtube.com/embed/d-3Q-FJNpBo"/>}/>
           <Route path="/immune/2" element={<Youtube title="What are the parts of the immune system?" back="/immune/1" next="/immune/3" video="https://www.youtube.com/embed/hQphK0AxcWE"/>}/>
